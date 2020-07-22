@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+
+<ion-content fullscreen>
+  <form onsubmit="processForm(event)">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Ingresar Correo <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Ingresar Contrsena <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-button (click)="LoginGoogle()">
+      Ingresar Por Google
+    </ion-button>
+  </form>
+</ion-content>
+
